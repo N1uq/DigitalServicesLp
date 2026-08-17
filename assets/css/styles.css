@@ -254,6 +254,20 @@ button, input, select, textarea {
   margin-bottom: 3.5rem;
 }
 
+.brand-name {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  white-space: nowrap;
+}
+
+.mobile-only-action {
+  display: none;
+}
+
 .section-tag {
   display: inline-flex;
   align-items: center;
@@ -269,6 +283,7 @@ button, input, select, textarea {
   text-transform: uppercase;
   margin-bottom: 1.25rem;
   backdrop-filter: blur(8px);
+  max-width: 100%;
 }
 
 /* Pulsing Dot para Badges */
@@ -1914,76 +1929,103 @@ button, input, select, textarea {
   justify-content: flex-end;
 }
 
-@media (max-width: 480px) {
-  .modal-footer { flex-direction: column; }
-  .modal-footer .btn { width: 100%; }
-}
-
 @media (max-width: 768px) {
-  /* Containers e Espaçamentos Gerais em Celulares */
+  /* Prevenção rigorosa de vazamento horizontal */
+  html, body {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
+
   .container {
-    padding-left: 1.15rem;
-    padding-right: 1.15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
   }
 
   .section {
-    padding-top: 3.75rem;
-    padding-bottom: 3.75rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+
+  /* Emblema / Tag em Celulares */
+  .section-tag {
+    font-size: 0.7rem;
+    padding: 0.35rem 0.75rem;
+    letter-spacing: 0.01em;
+    line-height: 1.35;
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    border-radius: var(--radius-medium);
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .section-title {
-    font-size: clamp(1.75rem, 5.8vw, 2.35rem);
+    font-size: clamp(1.65rem, 5.5vw, 2.25rem);
     margin-bottom: 1rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .section-subtitle {
-    font-size: 0.9375rem;
+    font-size: 0.9rem;
   }
 
   .section-header {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.25rem;
   }
 
   /* Cabeçalho Flutuante Ajustado */
   .header {
-    top: 0.75rem;
+    top: 0.6rem;
   }
 
   .nav-container-capsule {
-    padding: 0.5rem 0.9rem;
+    padding: 0.5rem 0.85rem;
   }
 
   .brand-name {
-    font-size: 1.05rem;
+    font-size: 0.95rem;
+    white-space: nowrap;
   }
 
   .brand-subtitle {
-    font-size: 0.65rem;
+    font-size: 0.625rem;
+    white-space: nowrap;
   }
 
   .nav-actions .btn-header {
-    padding: 0.45rem 0.75rem;
-    font-size: 0.75rem;
+    display: none !important;
+  }
+
+  .mobile-only-action {
+    display: block;
+    width: 100%;
+    margin-top: 1.25rem;
   }
 
   /* Hero Section em Celulares */
   .hero-section {
-    padding-top: 7.25rem;
-    padding-bottom: 3rem;
+    padding-top: 6.75rem;
+    padding-bottom: 2.75rem;
   }
 
   .hero-grid {
-    gap: 2.25rem;
+    gap: 2rem;
   }
 
   .hero-title {
-    font-size: clamp(1.85rem, 6.2vw, 2.5rem);
-    margin-bottom: 1.15rem;
+    font-size: clamp(1.5rem, 5.2vw, 2.15rem);
+    line-height: 1.25;
+    margin-bottom: 1rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
   }
 
   .hero-subtitle {
-    font-size: 0.95rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    margin-bottom: 1.25rem;
   }
 
   .hero-highlights {
