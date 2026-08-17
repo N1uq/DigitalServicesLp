@@ -1919,6 +1919,292 @@ button, input, select, textarea {
   .modal-footer .btn { width: 100%; }
 }
 
+@media (max-width: 768px) {
+  /* Containers e Espaçamentos Gerais em Celulares */
+  .container {
+    padding-left: 1.15rem;
+    padding-right: 1.15rem;
+  }
+
+  .section {
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+
+  .section-title {
+    font-size: clamp(1.75rem, 5.8vw, 2.35rem);
+    margin-bottom: 1rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .section-header {
+    margin-bottom: 2.5rem;
+  }
+
+  /* Cabeçalho Flutuante Ajustado */
+  .header {
+    top: 0.75rem;
+  }
+
+  .nav-container-capsule {
+    padding: 0.5rem 0.9rem;
+  }
+
+  .brand-name {
+    font-size: 1.05rem;
+  }
+
+  .brand-subtitle {
+    font-size: 0.65rem;
+  }
+
+  .nav-actions .btn-header {
+    padding: 0.45rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  /* Hero Section em Celulares */
+  .hero-section {
+    padding-top: 7.25rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero-grid {
+    gap: 2.25rem;
+  }
+
+  .hero-title {
+    font-size: clamp(1.85rem, 6.2vw, 2.5rem);
+    margin-bottom: 1.15rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-highlights {
+    gap: 0.75rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .highlight-item {
+    font-size: 0.85rem;
+  }
+
+  /* Removendo rotação dos Mockups para evitar transbordo lateral */
+  .device-mockup-desktop {
+    transform: none !important;
+    border-radius: var(--radius-medium);
+  }
+
+  .device-mockup-desktop:hover {
+    transform: none !important;
+  }
+
+  .device-screen {
+    padding: 0.85rem;
+  }
+
+  .device-mockup-mobile {
+    right: 0.25rem;
+    bottom: -0.85rem;
+    width: 140px;
+  }
+
+  /* Tech Strip */
+  .tech-strip {
+    margin-top: 3.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .tech-strip-items {
+    gap: 1.15rem;
+  }
+
+  .tech-item {
+    font-size: 0.8125rem;
+  }
+
+  /* Seção de Segmentos em Celulares */
+  .segments-wrapper {
+    gap: 0.6rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .segment-pill {
+    padding: 0.5rem 0.95rem;
+    font-size: 0.8125rem;
+  }
+
+  .segments-custom-box {
+    padding: 1.5rem 1.15rem;
+    border-radius: var(--radius-medium);
+  }
+
+  /* Bento Grid e Benefícios */
+  .bento-card {
+    padding: 1.65rem 1.35rem;
+    border-radius: var(--radius-medium);
+  }
+
+  .bento-title {
+    font-size: 1.2rem;
+  }
+
+  /* Processo Como Funciona */
+  .step-card {
+    padding: 1.65rem 1.35rem;
+    border-radius: var(--radius-medium);
+  }
+
+  .step-number {
+    font-size: 2.25rem;
+  }
+
+  /* Mostruário de Produtos em Celulares */
+  .demo-showcase-container {
+    padding: 1.15rem;
+    border-radius: var(--radius-medium);
+  }
+
+  .showcase-search {
+    max-width: 100%;
+  }
+
+  .showcase-cats {
+    padding-bottom: 0.5rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .showcase-products-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 0.85rem;
+  }
+
+  .product-demo-thumb {
+    height: 140px;
+  }
+
+  .product-demo-body {
+    padding: 0.75rem;
+  }
+
+  .product-demo-name {
+    font-size: 0.8125rem;
+  }
+
+  .product-demo-price {
+    font-size: 0.9375rem;
+  }
+
+  /* Planos e Preços */
+  .plan-card {
+    padding: 2rem 1.35rem;
+    border-radius: var(--radius-medium);
+  }
+
+  .plan-price-val {
+    font-size: 2.125rem;
+  }
+
+  .comparison-wrapper {
+    padding: 1.25rem 0.85rem;
+    border-radius: var(--radius-medium);
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Manutenção */
+  .maintenance-card {
+    padding: 2rem 1.25rem;
+    border-radius: var(--radius-medium);
+    gap: 1.5rem;
+  }
+
+  .maintenance-action {
+    padding: 1.5rem 1.15rem;
+  }
+
+  /* Chamada Final CTA */
+  .cta-banner {
+    padding: 2.75rem 1.25rem;
+    border-radius: var(--radius-medium);
+  }
+
+  .cta-banner h2 {
+    font-size: 1.65rem;
+  }
+
+  .cta-banner p {
+    font-size: 0.95rem;
+  }
+
+  /* Rodapé */
+  .footer {
+    padding-top: 3.5rem;
+  }
+
+  .huge-footer-watermark {
+    padding: 1rem 0;
+  }
+
+  .text-stroke {
+    font-size: clamp(2.5rem, 11vw, 5rem);
+  }
+
+  /* Modais no Celular */
+  .modal-backdrop {
+    padding: 0.75rem;
+  }
+
+  .modal-dialog {
+    max-height: 92vh;
+    border-radius: var(--radius-medium);
+  }
+
+  .modal-header {
+    padding: 1.15rem 1.25rem;
+  }
+
+  .modal-body {
+    padding: 1.25rem 1.15rem;
+    gap: 1.15rem;
+  }
+
+  .modal-footer {
+    padding: 1rem 1.15rem;
+    flex-direction: column-reverse;
+    gap: 0.65rem;
+  }
+
+  .modal-footer .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .demo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-ctas {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .hero-ctas .btn, .hero-ctas .shiny-cta {
+    width: 100%;
+  }
+
+  .showcase-products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;
