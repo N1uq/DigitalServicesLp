@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#081426" />
+      <stop offset="100%" stop-color="#0D1B2F" />
+    </linearGradient>
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#2563EB" />
+      <stop offset="100%" stop-color="#60A5FA" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bgGrad)" rx="16" />
+  <rect x="30" y="30" width="740" height="40" fill="#050B16" rx="8" />
+  <circle cx="60" cy="50" r="6" fill="#FF5F56" />
+  <circle cx="80" cy="50" r="6" fill="#FFBD2E" />
+  <circle cx="100" cy="50" r="6" fill="#27C93F" />
+  <rect x="130" y="40" width="400" height="20" fill="#11233D" rx="4" />
+  <text x="140" y="54" fill="#94A3B8" font-family="sans-serif" font-size="12">https://catalogofashion.com.br</text>
+
+  <!-- Navigation -->
+  <rect x="30" y="90" width="740" height="50" fill="#11233D" rx="8" />
+  <text x="60" y="120" fill="#F7FAFC" font-family="sans-serif" font-weight="bold" font-size="18">BOUTIQUE ELEGANCE</text>
+
+  <!-- Category Pills -->
+  <rect x="400" y="103" width="90" height="24" fill="url(#primaryGrad)" rx="12" />
+  <text x="415" y="119" fill="#FFFFFF" font-family="sans-serif" font-size="11" font-weight="bold">Coleção Verão</text>
+
+  <rect x="500" y="103" width="70" height="24" fill="#081426" rx="12" />
+  <text x="515" y="119" fill="#94A3B8" font-family="sans-serif" font-size="11">Feminino</text>
+
+  <rect x="580" y="103" width="70" height="24" fill="#081426" rx="12" />
+  <text x="595" y="119" fill="#94A3B8" font-family="sans-serif" font-size="11">Masculino</text>
+
+  <!-- Grid Items -->
+  <!-- Card 1 -->
+  <rect x="30" y="160" width="230" height="380" fill="#11233D" rx="12" stroke="#2563EB" stroke-opacity="0.3" />
+  <rect x="45" y="175" width="200" height="220" fill="#050B16" rx="8" />
+  <text x="145" y="290" fill="#60A5FA" font-family="sans-serif" font-size="14" text-anchor="middle">Foto do Look 1</text>
+  <text x="45" y="420" fill="#F7FAFC" font-family="sans-serif" font-weight="bold" font-size="14">Vestido Midi Alfaiataria</text>
+  <text x="45" y="440" fill="#94A3B8" font-family="sans-serif" font-size="12">CÓD: FEM-201</text>
+  <text x="45" y="470" fill="#22C55E" font-family="sans-serif" font-weight="bold" font-size="16">R$ 199,90</text>
+  <rect x="45" y="490" width="200" height="36" fill="#22C55E" fill-opacity="0.15" rx="6" stroke="#22C55E" stroke-opacity="0.4" />
+  <text x="145" y="513" fill="#22C55E" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Pedir no WhatsApp</text>
+
+  <!-- Card 2 -->
+  <rect x="285" y="160" width="230" height="380" fill="#11233D" rx="12" stroke="#2563EB" stroke-opacity="0.3" />
+  <rect x="300" y="175" width="200" height="220" fill="#050B16" rx="8" />
+  <text x="400" y="290" fill="#60A5FA" font-family="sans-serif" font-size="14" text-anchor="middle">Foto do Look 2</text>
+  <text x="300" y="420" fill="#F7FAFC" font-family="sans-serif" font-weight="bold" font-size="14">Camisa Slim Linho</text>
+  <text x="300" y="440" fill="#94A3B8" font-family="sans-serif" font-size="12">CÓD: MAS-104</text>
+  <text x="300" y="470" fill="#22C55E" font-family="sans-serif" font-weight="bold" font-size="16">R$ 159,00</text>
+  <rect x="300" y="490" width="200" height="36" fill="#22C55E" fill-opacity="0.15" rx="6" stroke="#22C55E" stroke-opacity="0.4" />
+  <text x="400" y="513" fill="#22C55E" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Pedir no WhatsApp</text>
+
+  <!-- Card 3 -->
+  <rect x="540" y="160" width="230" height="380" fill="#11233D" rx="12" stroke="#2563EB" stroke-opacity="0.3" />
+  <rect x="555" y="175" width="200" height="220" fill="#050B16" rx="8" />
+  <text x="655" y="290" fill="#60A5FA" font-family="sans-serif" font-size="14" text-anchor="middle">Foto do Look 3</text>
+  <text x="555" y="420" fill="#F7FAFC" font-family="sans-serif" font-weight="bold" font-size="14">Conjunto Linho Premium</text>
+  <text x="555" y="440" fill="#94A3B8" font-family="sans-serif" font-size="12">CÓD: FEM-305</text>
+  <text x="555" y="470" fill="#22C55E" font-family="sans-serif" font-weight="bold" font-size="16">R$ 249,00</text>
+  <rect x="555" y="490" width="200" height="36" fill="#22C55E" fill-opacity="0.15" rx="6" stroke="#22C55E" stroke-opacity="0.4" />
+  <text x="655" y="513" fill="#22C55E" font-family="sans-serif" font-weight="bold" font-size="12" text-anchor="middle">Pedir no WhatsApp</text>
+</svg>

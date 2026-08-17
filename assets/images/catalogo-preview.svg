@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="100%" height="100%">
+  <rect width="600" height="400" fill="#0D1B2F" rx="12" stroke="#60A5FA" stroke-opacity="0.3"/>
+  <text x="300" y="200" fill="#60A5FA" font-family="sans-serif" font-weight="bold" font-size="20" text-anchor="middle">Demonstração de Catálogo Digital</text>
+  <text x="300" y="230" fill="#94A3B8" font-family="sans-serif" font-size="14" text-anchor="middle">Exemplo visual personalizado para sua loja</text>
+</svg>
