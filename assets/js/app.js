@@ -63,40 +63,42 @@ function initHeader() {
 
 function initMobileMenu() {
   const toggleBtn = document.querySelector(".mobile-toggle");
-  const navMenu = document.querySelector(".nav-menu");
+  const drawer = document.getElementById("mobileDrawer");
+  const closeBtn = document.querySelector(".mobile-drawer-close");
   const backdrop = document.querySelector(".mobile-backdrop");
-  const navLinks = document.querySelectorAll(".nav-link, .mobile-nav-btn");
+  const drawerLinks = document.querySelectorAll(".mobile-drawer-link, .mobile-drawer-footer a");
 
-  if (!toggleBtn || !navMenu || !backdrop) return;
+  if (!toggleBtn || !drawer || !backdrop) return;
 
   function openMenu() {
-    navMenu.classList.add("active");
+    drawer.classList.add("active");
     backdrop.classList.add("active");
     toggleBtn.setAttribute("aria-expanded", "true");
     document.body.classList.add("scroll-locked");
   }
 
   function closeMenu() {
-    navMenu.classList.remove("active");
+    drawer.classList.remove("active");
     backdrop.classList.remove("active");
     toggleBtn.setAttribute("aria-expanded", "false");
     document.body.classList.remove("scroll-locked");
   }
 
   toggleBtn.addEventListener("click", () => {
-    const isActive = navMenu.classList.contains("active");
+    const isActive = drawer.classList.contains("active");
     if (isActive) closeMenu();
     else openMenu();
   });
 
+  if (closeBtn) closeBtn.addEventListener("click", closeMenu);
   backdrop.addEventListener("click", closeMenu);
 
-  navLinks.forEach((link) => {
+  drawerLinks.forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && navMenu.classList.contains("active")) {
+    if (e.key === "Escape" && drawer.classList.contains("active")) {
       closeMenu();
     }
   });
